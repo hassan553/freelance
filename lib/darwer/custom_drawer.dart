@@ -27,7 +27,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                     onTap: () {},
                     isSearchExit: true,
                     onChange: (value) {},
-                    onConfirm: () {},
+                    onConfirm: () {
+                      Navigator.of(context).pop();
+                    },
                   );
                 });
           }),
@@ -42,7 +44,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                     onTap: () {},
                     isSearchExit: true,
                     onChange: (value) {},
-                    onConfirm: () {},
+                    onConfirm: () {
+                      Navigator.of(context).pop();
+                    },
                   );
                 });
           }),
@@ -55,7 +59,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                     titles: const ['Dark', 'Light'],
                     icons: const ['', ''],
                     onTap: () {},
-                    onConfirm: () {},
+                    onConfirm: () {
+                      Navigator.of(context).pop();
+                    },
                   );
                 });
           }),
@@ -155,7 +161,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                         titles: const ['arabic', 'english'],
                         icons: const ['', ''],
                         onTap: () {},
-                        onConfirm: () {},
+                        onConfirm: () {
+                          Navigator.of(context).pop();
+                        },
                       );
                     });
               },

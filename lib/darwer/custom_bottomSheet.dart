@@ -75,19 +75,19 @@ class _CustomBottomModalSheetState extends State<CustomBottomModalSheet> {
   }
 
   Widget _customListTile(String title, IconData? icon, void Function()? onTap) {
-    return ListTile(
-      onTap: () {
-        handleRadioValueChanged(title);
-        onTap;
-      },
-      leading: Icon(icon, size: 30, color: Colors.blue),
-      title: Text(title),
-      trailing: Radio.adaptive(
-        value: title,
-        groupValue: selectedRadioValue,
-        onChanged: (value) {
-          handleRadioValueChanged(value ?? '');
-        },
+    return InkWell(
+      onTap: onTap,
+      child: ListTile(
+        onTap: () => handleRadioValueChanged(title),
+        leading: Icon(icon, size: 30, color: Colors.blue),
+        title: Text(title),
+        trailing: Radio.adaptive(
+          value: title,
+          groupValue: selectedRadioValue,
+          onChanged: (value) {
+            handleRadioValueChanged(value ?? '');
+          },
+        ),
       ),
     );
   }

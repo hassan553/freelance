@@ -9,14 +9,14 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(20.0),
+      borderRadius: BorderRadius.circular(10.0),
       child: SizedBox(
         height: 40,
         child: TextField(
           onChanged: onChange,
           decoration: InputDecoration(
               filled: true,
-              fillColor: Colors.grey.shade400,
+              fillColor: Colors.grey.shade300,
               border: InputBorder.none,
               prefixIcon: const Icon(CupertinoIcons.search),
               hintText: 'Search....',

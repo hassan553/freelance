@@ -13,7 +13,8 @@ class ConfirmButton extends StatelessWidget {
       borderRadius: BorderRadius.circular(20.0),
       child: MaterialButton(
         onPressed: onTap,
-        padding: const EdgeInsetsDirectional.symmetric(horizontal: 20),
+        padding:
+            const EdgeInsetsDirectional.symmetric(horizontal: 40, vertical: 10),
         color: buttonColor ?? Colors.red,
         child: Text(
           'Confirm',
